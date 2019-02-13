@@ -1,4 +1,6 @@
-RSpec.describe 'Recipe' do
+require 'recipe'
+
+RSpec.describe Recipe do
   def recipe
     Recipe.new("Chicken Pie", "Delicious homemade Chicken Pie")
   end
@@ -8,6 +10,6 @@ RSpec.describe 'Recipe' do
   end
 
   it 'has a description' do
-    expect(recipe.decription).to eq("Delicious homemade Chicken Pie")
+    expect(recipe.description).to eq("Delicious homemade Chicken Pie")
   end
 end
